@@ -4,8 +4,8 @@ const ProjectsInGithub = [
         subtitle: "React/Material Web Project",
         imgURL: "react_code.webp",
         description: "React app that you're currently viewing, built to show examples as I progress in front-end web development and automated testing",
-        publishLink: "https://eichhorn-personal.github.io/react-portfolio/",
-        repoLink: ""
+        publishLink: "https://eichhorn-personal.github.io/portfolio/",
+        repoLink: "https://github.com/Eichhorn-personal/portfolio"
     },
 
     {
