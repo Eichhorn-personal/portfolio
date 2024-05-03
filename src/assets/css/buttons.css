@@ -1,0 +1,44 @@
+.button-default {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+#button-email-svg {
+    height: 24px;
+    width: 24px;
+    background-color: #ffffff;
+    fill: #b3b3b3;
+}
+
+#button-email-svg:hover {
+    height: 32px;
+    width: 32px;
+    fill: black;
+}
+
+#button-linkedin-svg {
+    height: 24px;
+    width: 24px;
+    background-color: #ffffff;
+    fill: #b3b3b3;
+}
+
+#button-linkedin-svg:hover {
+    height: 32px;
+    width: 32px;
+    fill: blue;
+}
+
+#button-github-svg {
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    fill: #b3b3b3;
+}
+
+#button-github-svg:hover {
+    height: 32px;
+    width: 32px;
+    fill: black;
+}

@@ -1,0 +1,22 @@
+.header-container {
+    position: static;
+    height: 40px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    
+}
+
+.header-brand {
+    margin-left: 20px;
+}
+
+.header-btn-container {
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+}
