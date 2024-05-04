@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import Card from 'react-bootstrap/Card';
 
-import { GithubButton } from './Buttons';
+import { GithubButton, HttpButton } from './Buttons';
 
 import '../assets/css/projectCard.css';
 
@@ -74,6 +74,12 @@ export default function GithubProjectCard(props) {
                 {props.project.repoLink.startsWith('http') &&
 
                     <GithubButton url= {props.project.repoLink} />
+
+                }
+
+                {props.project.publishLink.startsWith('http') &&
+
+                    <HttpButton url= {props.project.publishLink} />
 
                 }
 

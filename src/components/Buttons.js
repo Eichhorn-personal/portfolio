@@ -1,4 +1,9 @@
-import * as React from 'react';
+import React, {useState} from 'react';
+
+import ModallWindow from './ModalWindow';
+
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
 
 import '../assets/css/buttons.css';
 
@@ -10,8 +15,18 @@ export function EmailButton() {
 
     return (
 
+        <OverlayTrigger
+        key='email link'
+        placement='bottom'
+        overlay={
+            <Tooltip id={'email link'}>
+                mailto:ceichhorn@gmail.com
+            </Tooltip>
+        }
+    >
         <button
         type="button"
+        id="button-email"
         className="button-default"
        
         >
@@ -27,6 +42,8 @@ export function EmailButton() {
 
         </button> 
 
+        </OverlayTrigger>
+
     )
 }
 
@@ -34,8 +51,19 @@ export function GithubButton(prop) {
 
     return (
 
+        <OverlayTrigger
+            key={prop.url}
+            placement='bottom'
+            overlay={
+                <Tooltip id={'tooltip-${prop.url}'}>
+                    {prop.url}
+                </Tooltip>
+            }
+        >
+
         <button
             type="button"
+            id="button-github"
             className="button-default"
             onClick= {() => openURL(prop.url)}  
         >
@@ -50,6 +78,8 @@ export function GithubButton(prop) {
 
         </button>
 
+        </OverlayTrigger>
+
     )
 
 }  
@@ -58,8 +88,19 @@ export function LinkedInButton(prop) {
 
     return (
 
+        <OverlayTrigger
+            key={prop.url}
+            placement='bottom'
+            overlay={
+                <Tooltip id={'tooltip-${prop.url}'}>
+                    {prop.url}
+                </Tooltip>
+            }
+        >   
+
         <button
         type="button"
+        id="button-linkedin"
         className="button-default"
         onClick= {() => openURL(prop.url)}  
         >
@@ -74,6 +115,79 @@ export function LinkedInButton(prop) {
 
         </button> 
 
+        </OverlayTrigger>
+
     )
 }
 
+export function HttpButton(prop) {
+
+    return (
+
+        <OverlayTrigger
+            key={prop.url}
+            placement='bottom'
+            overlay={
+                <Tooltip id={'tooltip-${prop.url}'}>
+                    {prop.url}
+                </Tooltip>
+            }
+        >   
+
+        <button
+            type="button"
+            id="button-http"
+            className="button-default"
+            onClick= {() => openURL(prop.url)}  
+        >
+            <svg
+                id="button-http-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+            >
+                <path fill-rule="evenodd" d="M16 8a8 8 0 0 1-7.022 7.94l1.902-7.098a3 3 0 0 0 .05-1.492A3 3 0 0 0 10.237 6h5.511A8 8 0 0 1 16 8M0 8a8 8 0 0 0 7.927 8l1.426-5.321a3 3 0 0 1-.723.255 3 3 0 0 1-1.743-.147 3 3 0 0 1-1.043-.7L.633 4.876A8 8 0 0 0 0 8m5.004-.167L1.108 3.936A8.003 8.003 0 0 1 15.418 5H8.066a3 3 0 0 0-1.252.243 2.99 2.99 0 0 0-1.81 2.59M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/>
+
+            </svg>
+
+        </button> 
+
+        </OverlayTrigger>
+    )
+}
+
+export function DisplayButton(prop) {
+
+    const [showModal, setShowModal] = useState(false);
+
+    const handleClick = () => {
+        setShowModal(true);
+    }
+
+    return (
+
+        <div>
+
+        <button
+            type="button"
+            id="button-display"
+            className="button-default"
+            onClick= {handleClick}
+        >
+            <svg
+                id="button-display-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+            >
+                <path d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4q0 1 .25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75Q6 13 6 12H2s-2 0-2-2zm1.398-.855a.76.76 0 0 0-.254.302A1.5 1.5 0 0 0 1 4.01V10c0 .325.078.502.145.602q.105.156.302.254a1.5 1.5 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.76.76 0 0 0 .254-.302 1.5 1.5 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.76.76 0 0 0-.302-.254A1.5 1.5 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145"/>
+            
+            </svg>
+
+        </button> 
+
+        {showModal && <ModallWindow onClose={() => setShowModal(false)} />}
+
+        </div>
+       
+    )
+
+}

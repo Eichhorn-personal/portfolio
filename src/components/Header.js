@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { GithubButton, LinkedInButton, EmailButton } from './Buttons.js';
+import { GithubButton, LinkedInButton, EmailButton, DisplayButton } from './Buttons.js';
 
 import '../assets/css/header.css';
 
@@ -23,6 +23,8 @@ export default function Header() {
                 <LinkedInButton url="https://www.linkedin.com/in/christophereichhorn/" />
 
                 <EmailButton />
+
+                <DisplayButton />
 
             </div>
     
