@@ -15,17 +15,18 @@
 
 .card-container {
     background-color: transparent;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(345px, 1fr));
     gap: 20px;
     margin: 20px;
-    justify-content: center;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {
     .card-container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        align-items: flex-start;
+        margin-bottom: 20px;
     }
 }

@@ -1,10 +1,13 @@
 .projectCard-card {
     width: 345px;
     max-width: 345px;
+    height: 500px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-left: 20px;
+    margin-right: auto;
 }
 
 .projectCard-card-img {
@@ -38,7 +41,6 @@
     padding-right: 5px;
     align-items: flex-start;
     font-size: small;
-    height: 225px;
 }
 
 .projectCard-card-footer {
@@ -50,35 +52,4 @@
     bottom: 0px;
     width: 100%;
     height: 40px;
-}
-
-.btn {
-    border: none;
-    outline: none;
-    padding-left: 3px;
-    padding-right: 3px;
-}
-
-#my-linkedin-svg {
-    height: 24px;
-    width: 24px;
-    fill: #b3b3b3;
-}
-
-#my-linkedin-svg:hover {
-    height: 32px;
-    width: 32px;
-    fill: blue;
-}
-
-#my-github-svg {
-    height: 24px;
-    width: 24px;
-    fill: #b3b3b3;
-}
-
-#my-github-svg:hover {
-    height: 32px;
-    width: 32px;
-    fill: black;
 }

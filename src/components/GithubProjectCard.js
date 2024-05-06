@@ -34,6 +34,11 @@ export default function GithubProjectCard(props) {
 
     const [image, setImage] = React.useState(null);
 
+    const truncateText = (text, maxLength) => {
+
+        return text.length > maxLength ? text.slice(0, maxLength) + '...' : text;
+    }
+
     React.useEffect(() => {
     
         loadImage().then(setImage);
@@ -63,7 +68,10 @@ export default function GithubProjectCard(props) {
 
             <Card.Text
                 className='projectCard-card-text'
-                dangerouslySetInnerHTML={{ __html: props.project.description }} />
+                dangerouslySetInnerHTML={{ __html: truncateText(props.project.description, 500) }}
+            >
+                
+            </Card.Text>
 
             <Card.Footer className='projectCard-card-footer'>
 
