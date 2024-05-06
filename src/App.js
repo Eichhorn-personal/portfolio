@@ -4,6 +4,7 @@ import ProjectsInGithub from './data/ProjectsInGithub';
 
 import Header from './components/Header';
 import GithubProjectCard from './components/GithubProjectCard';
+import PortfolioSiteCard from './components/ReactSiteCard';
 import Footer from './components/Footer';
 
 function App() {
@@ -25,20 +26,17 @@ function App() {
                 except for this portfolio site.
                 <br /><br />
                 Major points/features of this site/app
-
-                <ul>
-                    <li>Built with React 18.3.1</li>
-                    <li>React-Bootstrap only for base card creation and svg icons</li>
-                    <li>Cards dynamically built via JSON data file for content</li>
-                    <li>Card layout is responsive</li>
-                    <li>Buttons on bottom of cards dynamically build based on data</li>
-                    <li>90% styling done in separate css files</li>
-                    <li>10% styling done via inline overrides</li>
-                </ul>
-
-
-
             </p>
+            <ul className='section-body'>
+                <li>React 18.3.1</li>
+                <li>React-Bootstrap 2.10.2</li>
+                <li>Material UI</li>
+                <li>Cards dynamically built via JSON data file for content</li>
+                <li>Card layout is responsive</li>
+                <li>Buttons on bottom of cards dynamically build based on data</li>
+                <li>90% styling done in separate css files</li>
+                <li>10% styling done via inline overrides</li>
+            </ul>
 
             </div>
 
@@ -50,6 +48,16 @@ function App() {
 
             </div>
 
+{/*
+            <div className='section-title'>
+
+                <PortfolioSiteCard />
+
+            </div>
+*/}            
+
+            <br /><br />
+            
             <Footer />
 
         </div>

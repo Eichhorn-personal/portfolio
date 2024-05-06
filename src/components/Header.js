@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { GithubButton, LinkedInButton, EmailButton, DisplayButton } from './Buttons.js';
+import { GithubButton, LinkedInButton, EmailButton, DisplayButton, ResumeButton } from './Buttons.js';
 
 import '../assets/css/header.css';
 
@@ -26,6 +26,9 @@ export default function Header() {
 
                 <DisplayButton />
 
+{/*
+                <ResumeButton myFile='../assets/images/Resume.pdf' />
+*/}
             </div>
     
         </header>

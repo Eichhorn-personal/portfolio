@@ -58,3 +58,22 @@
 #button-display-svg:hover {
     fill: #000000;
 }
+
+#button-pdf-svg {
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    fill: #b3b3b3;
+}
+
+#button-pdf-svg:hover {
+    fill: #000000;
+}
+
+#tooltip-container {
+    padding: 1px;
+}
+
+#tooltip-content {
+    padding: 1px;
+}

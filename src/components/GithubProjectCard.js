@@ -8,10 +8,6 @@ import '../assets/css/projectCard.css';
 
 export default function GithubProjectCard(props) {
 
-    const openURL = (url) => {
-        window.open(url, '_blank');
-    }
-
 //  Dynamically import the image using the prop
     const loadImage = async () => {
 
