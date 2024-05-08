@@ -151,7 +151,7 @@ export default function PortfolioSiteCard() {
                             <li>Card layout is responsive</li>
                             <li>Buttons on bottom of project cards dynamically build based on data</li>
                             <li>90% styling done in separate css files</li>
-                            <li>10% styling done via inlin`e overrides</li>
+                            <li>10% styling done via inline overrides</li>
                         </ul>
                         
                     </Typography>
