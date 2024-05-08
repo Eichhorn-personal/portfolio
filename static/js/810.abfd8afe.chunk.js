@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[810],{7810:(e,o,p)=>{e.exports=p.p+"static/media/tindog.30f448f0d1679d895dbe.png"}}]);
