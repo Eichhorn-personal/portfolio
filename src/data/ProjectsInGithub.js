@@ -39,7 +39,7 @@ const ProjectsInGithub = [
     {
         title: "Sample Title",
         subtitle: "Sample Subtitle",
-        imgURL: "http://loremflickr.com/345/194",
+        imgURL: "https://loremflickr.com/345/194",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae tempus quam pellentesque nec. Pharetra diam sit amet nisl suscipit adipiscing bibendum est. Velit aliquet sagittis id consectetur purus. Dolor morbi non arcu risus quis. Justo laoreet sit amet cursus sit amet. ",
         publishLink: "",
         repoLink: ""
@@ -48,7 +48,7 @@ const ProjectsInGithub = [
     {
         title: "Sample Title",
         subtitle: "Sample Subtitle",
-        imgURL: "http://loremflickr.com/345/194/dog",
+        imgURL: "https://loremflickr.com/345/194/dog",
         description: "Sample description",
         publishLink: "",
         repoLink: ""
@@ -57,7 +57,7 @@ const ProjectsInGithub = [
     {
         title: "Lorem ipsum title",
         subtitle: "Lorem ipsum subtitle",
-        imgURL: "http://loremflickr.com/345/194/paris",
+        imgURL: "https://loremflickr.com/345/194/paris",
         description: "",
         publishLink: "",
         repoLink: ""

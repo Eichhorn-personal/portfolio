@@ -24,6 +24,8 @@ import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
+import headerImg from '../assets/images/react_code.webp';
+
 import '../assets/css/projectCard.css';
 
 const ExpandMore = styled((props) => {
@@ -43,26 +45,13 @@ const ExpandMore = styled((props) => {
 
 }));
 
-export default function PortfolioSiteCard() {
+export default function ReactSiteCard() {
 
     const [expanded, setExpanded] = React.useState(false);
-    const [image, setImage] = React.useState(null);
 
     const handleExpandClick = () => {
         setExpanded(!expanded);
     };
-    
-    const loadImage = async () => {
-
-        const imageModule = await import(`../assets/images/react_code.webp`);
-        return imageModule.default;
-    };
-
-    React.useEffect(() => {
-    
-        loadImage().then(setImage);
-    
-    }, `../assets/images/react_code.webp`);
     
     return (
         <Card sx = {{ width: '345px' }} className='mt-4'>
@@ -90,14 +79,14 @@ export default function PortfolioSiteCard() {
             <CardMedia
                 component="img"
                 height="194"
-                image={image}
-                alt="Paella dish"
+                image={headerImg}
+                alt="React Image"
             />
 
             <CardContent>
       
-                <Typography variant="body2" color="text.secondary">
-          
+                <Typography component="span" variant="body2" color="text.secondary">
+            
                 React app that you're currently viewing, built to show examples 
                 as I progress in front-end web development and automated testing
 
@@ -136,27 +125,27 @@ export default function PortfolioSiteCard() {
 
             <Collapse in={expanded} timeout="auto" unmountOnExit>
 
-                <CardContent>
-              
-                    <Typography variant="body2" color="text.secondary">
-                    
-                        Major points/features of this site/app
-                        <br /><br />                  
-                        <ul>
-                            <li>React 18.3.1</li>
-                            <li>React-Bootstrap 2.10.2</li>
-                            <li>Material UI 5.5.16</li>
-                            <li>Project cards dynamically build their content 
-                            from a JSON data object/file</li>
-                            <li>Card layout is responsive</li>
-                            <li>Buttons on bottom of project cards dynamically build based on data</li>
-                            <li>90% styling done in separate css files</li>
-                            <li>10% styling done via inline overrides</li>
-                        </ul>
-                        
-                    </Typography>
-              
-                </CardContent>
+            <CardContent>
+            
+            <Typography component="span" variant="body2" color="text.secondary">
+            
+                Major points/features of this site/app
+                <br /><br />                  
+                
+                <ul>
+                    <li>React 18.3.1</li>
+                    <li>React-Bootstrap 2.10.2</li>
+                    <li>Material UI 5.5.16</li>
+                    <li>Project cards dynamically build their content from a JSON data object/file</li>
+                    <li>Card layout is responsive</li>
+                    <li>Buttons on bottom of project cards dynamically build based on data</li>
+                    <li>90% styling done in separate css files</li>
+                    <li>10% styling done via inline overrides</li>
+                </ul>
+                
+            </Typography>
+            
+            </CardContent>
       
             </Collapse>
     </Card>

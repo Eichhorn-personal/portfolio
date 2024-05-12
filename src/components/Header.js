@@ -24,11 +24,10 @@ export default function Header() {
 
                 <EmailButton />
 
+                <ResumeButton />
+
                 <DisplayButton />
 
-{/*
-                <ResumeButton myFile='../assets/images/Resume.pdf' />
-*/}
             </div>
     
         </header>
